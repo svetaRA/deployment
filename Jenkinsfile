@@ -22,12 +22,7 @@ pipeline {
                 bat "mvn install"
         }
 		  }
-              stage('deployment stage') {
-              steps {
-                
- 		bat "mvn deploy"
-        }
-    }
+            
 
   }
 
