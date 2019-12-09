@@ -25,7 +25,7 @@ pipeline {
               stage('deployment stage') {
               steps {
                 
- "copy C:\Users\dell\.jenkins\workspace\AutoDeployment\target*.war D:\apache-tomcat-7.0.92\webapps"
+ "copy C:/Users/dell/.jenkins/workspace/AutoDeployment/target*.war D:/apache-tomcat-7.0.92/webapps"
         }
     }
 
