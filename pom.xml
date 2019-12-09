@@ -17,12 +17,16 @@
   </dependencies>
   <build>
     <finalName>JenkinsWar</finalName>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.tomcat.maven</groupId>
-            <artifactId>tomcat7-maven-plugin</artifactId>
-            <version>2.3-SNAPSHOT</version>
-        </plugin>
-    </plugins>
+   <plugins>
+    <plugin>
+    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.2</version>
+    <configuration>
+    <port>9090</port>
+    <path>/</path>
+    </configuration>
+    </plugin>
+</plugins>
   </build>
 </project>
