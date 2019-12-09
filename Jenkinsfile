@@ -17,9 +17,13 @@ pipeline {
         }
     }
 
-          stage('deployment stage') {
+          stage('install stage') {
               steps {
                 bat "mvn install"
+        }
+              stage('deployment stage') {
+              steps {
+                bat "deploy adapters: [tomcat7(credentialsId: 'admin', path: '', url: 'http://localhost:9090')], contextPath: null, war: 'target/JenkinsWar.war'"
         }
     }
 
